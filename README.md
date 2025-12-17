@@ -1,12 +1,5 @@
 # Homebrew
 
-
-## Formulae List
-
-* [kubee](https://github.com/combostrap/kubee) - Kubee, Kubernetes the easy way. One single VPS hosting and beyond
-* [doc-exec](https://github.com/combostrap/doc-exec) - Doc Execution
-
-
 ## Formulae
 Invoke either of the following commands if the formula is hosted at GitHub
 
@@ -53,7 +46,3 @@ If you get a dialog stating the cask is broken try installing with `--no-quarant
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
-
-## Dev/Contrib
-
-See [Contrib](contrib.md)
