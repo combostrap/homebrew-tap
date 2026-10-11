@@ -1,9 +1,9 @@
 class Kubee < Formula
   desc "Kubernetes, the Easy way. Single VPS hosting and beyond."
   homepage "https://kubee.combostrap.com"
-  url "https://github.com/combostrap/kubee/releases/download/v0.1.2/kubee-0.1.2.zip"
-  version "0.1.2"
-  sha256 "79f33460c519d5579852c50cc565efdbbf7404fa52bd0cefb68e4ecc3f384e9b"
+  url "https://github.com/combostrap/kubee/releases/download/v0.1.3/kubee-0.1.3.zip"
+  version "0.1.3"
+  sha256 "a01ec03d8f7d8b131aa8467558db434556728fbb02e974a6f503dcdc90937683"
   license "Apache-2.0"
   # https://rubydoc.brew.sh/Formula#head-class_method
   head "https://github.com/combostrap/kubee.git", branch: "main"
@@ -51,7 +51,7 @@ class Kubee < Formula
             KUBEE_CHARTS_PATH="$KUBEE_CHARTS_PATH:#{libexec}/charts"
         fi
         export KUBEE_RESOURCES_DIR="#{libexec}"
-        PROJECT_VERSION="0.1.2"
+        export KUBEE_VERSION="0.1.3"
       EOS
 
       File.write(f, new_header + content.drop(1).join)
@@ -83,7 +83,7 @@ end
     # executables being tested: `system bin/"program", "do", "something"`.
 
     output = shell_output("#{bin}/kubee --help")
-    # assert_match "0.1.2", output
+    # assert_match "0.1.3", output
 
   end
 end
